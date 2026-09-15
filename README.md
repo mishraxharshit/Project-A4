@@ -1,2 +1,2 @@
 # A4
-Cognitive Science &amp; Engineering
+Cognitive Physics &amp; Engineering
