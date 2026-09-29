@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project-A4
 
 **Cognitive Engineering & Research** — an open ecosystem for building, studying, and sharing tools, models, and methods at the intersection of cognition, engineering, and applied research.
@@ -113,3 +114,7 @@ This project is licensed under the terms of the [MIT License](LICENSE) unless ot
 ## Contact
 
 Maintained by the Project-A4 team under **Cognitive Engineering & Research**. Open an issue for questions, proposals, or discussion.
+=======
+# A4
+Cognitive Physics &amp; Engineering
+>>>>>>> 418fb30a77f128d96b01c95a612b0bd3b7a0de25

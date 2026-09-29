@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # --- OS ---
 .DS_Store
 Thumbs.db
@@ -61,3 +62,6 @@ logs/
 # --- Build artifacts ---
 *.zip
 *.tar.gz
+=======
+*.aux\n*.log\n*.out\n*.toc\n*.pdf
+>>>>>>> 418fb30a77f128d96b01c95a612b0bd3b7a0de25
