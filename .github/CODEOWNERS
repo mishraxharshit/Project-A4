@@ -1,0 +1,10 @@
+# Default owners for everything in the repo.
+# Replace @your-github-username with your actual GitHub handle(s)
+# and add more specific owners per path as the team grows.
+
+*                   @your-github-username
+
+# Example of path-specific ownership once the team grows:
+# /research/         @research-lead-username
+# /src/               @core-maintainer-username
+# /docs/              @docs-maintainer-username

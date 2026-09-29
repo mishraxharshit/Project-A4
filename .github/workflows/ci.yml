@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  repo-hygiene:
+    name: Repository Hygiene Checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for merge conflict markers
+        run: |
+          if grep -rIn --exclude-dir=.git -E "^(<<<<<<<|=======|>>>>>>>)" .; then
+            echo "Merge conflict markers found."
+            exit 1
+          fi
+
+      - name: Check for accidental large files (>5MB)
+        run: |
+          find . -type f -not -path "./.git/*" -size +5M -exec echo "Large file: {}" \; -exec false {} +
+
+      - name: Lint Markdown links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          config-file: '.github/mlc_config.json'
+        continue-on-error: true
+
+  # Placeholder: extend this once the primary language/stack is chosen.
+  # Examples:
+  #   - Python: actions/setup-python + ruff/pytest
+  #   - Node/TS: actions/setup-node + eslint/vitest
+  build-and-test:
+    name: Build & Test (placeholder)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: No build steps configured yet
+        run: echo "Add language-specific build/test steps here once the stack is chosen."

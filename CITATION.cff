@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software or research artifacts, please cite it as below."
+title: "Project-A4: Cognitive Engineering & Research"
+type: software
+authors:
+  - name: "Project-A4 Contributors"
+repository-code: "https://github.com/<your-org-or-username>/Project-A4"
+license: MIT
+date-released: 2026-09-26
+keywords:
+  - cognitive engineering
+  - cognitive science
+  - open research
+  - research ecosystem

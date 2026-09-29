@@ -1,0 +1,42 @@
+name: Research Proposal / Contribution
+description: Propose a new research direction, experiment, or research write-up.
+title: "[Research]: "
+labels: ["research", "triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One-paragraph summary of the research question or contribution.
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: Background & Related Work
+      description: Relevant prior work, citations, or context.
+    validations:
+      required: false
+  - type: textarea
+    id: method
+    attributes:
+      label: Proposed Method / Approach
+    validations:
+      required: false
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Idea / Draft
+        - In Progress
+        - Ready for Review
+        - Completed
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Notes
+    validations:
+      required: false
