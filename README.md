@@ -114,3 +114,4 @@ This project is licensed under the terms of the [MIT License](LICENSE) unless ot
 
 Maintained by the Project-A4 team under **Cognitive Engineering & Research**. Open an issue for questions, proposals, or discussion.
 
+---
